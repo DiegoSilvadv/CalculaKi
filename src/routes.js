@@ -1,13 +1,15 @@
 import React from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 
-import landing from './pages/landing';
+import Landing from './pages/landing';
+import Lathe from './pages/lathe';
 
 function Routes(){
     return(
         <BrowserRouter>
             <Switch>
-                <Route path="/" component={landing} />
+                <Route path="/" exact component={Landing} />
+                <Route path="/lathe" component={Lathe} />
             </Switch>
         </BrowserRouter>
     );
