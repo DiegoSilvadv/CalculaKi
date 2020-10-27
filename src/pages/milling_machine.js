@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
-import '../styles/lathe.css';
+import '../styles/milling.css';
 import Logo from '../images/calculaki.svg';
-import {FiArrowLeft} from 'react-icons/fi';
 
-function Lathe(){
+import { FiArrowLeft } from 'react-icons/fi';
 
-    const [diameter, setDiameter] = useState('');
-    const [vc, setVc] = useState('');
+function Milling(){
+
+    const [diameter, setDiameter] = useState(0);
+    const [vc, setVc] = useState(0);
     const [result, setResult] = useState(0);
     
     //função de click do botão
     function handleResult(){
-        if(diameter != 1 && vc != 0 ){
+        if(diameter != 0 && vc != 0 ){
             setResult(Math.round((vc*1000)/(diameter*3.14)))
         }
         else {
@@ -26,6 +27,7 @@ function Lathe(){
         setVc(0);
     }
     
+
     return(
         <div className="container">
             <div className="content">
@@ -33,13 +35,13 @@ function Lathe(){
                     <FiArrowLeft size={23} color="#ffffff" />
                 </Link>
                 
-                <strong>Torno mecânico</strong>
-                <p>Para achar o rpm ideal basta apenas colocar o valor do diametro da peça <small>(em mm)</small> representado pela letra 'D' e a velocidade de corte representado pelas letras 'VC'. </p>
+                <strong>Fresadora</strong>
+                <p>Para achar o rpm ideal basta apenas colocar o valor do diametro da ferramenta <small>(em mm)</small> representado pela letra 'D' e a velocidade de corte representado pelas letras 'VC'. </p>
                 
                     <fieldset>
-                        <legend>Torno mecânico</legend>
+                        <legend>Fresadora</legend>
                         <div className="input-block">
-                            <label htmlFor="diameter">Diametro da peça(Dm)</label>
+                            <label htmlFor="diameter">Diametro da ferramenta(D)</label>
                             <input 
                                 id="diameter" 
                                 value={diameter} 
@@ -47,7 +49,7 @@ function Lathe(){
                                 />
                         </div>
                         <div className="input-block">
-                            <label htmlFor="vc">Velocidade de corte</label>
+                            <label htmlFor="vc">Velocidade de corte(VC)</label>
                             <input 
                                 id="vc" 
                                 value={vc} 
@@ -78,4 +80,4 @@ function Lathe(){
     );
 }
 
-export default Lathe;
+export default Milling;

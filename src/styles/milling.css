@@ -45,6 +45,9 @@
     height: 300px;
     font-size: 14px;
 
+    color: rgba(10, 10, 10, 0.8);
+    font-weight: 400;
+
     border-bottom: none;
     border-left: none;
     border-right: none;
