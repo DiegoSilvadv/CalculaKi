@@ -77,7 +77,7 @@
     margin-top: 10%;
     margin-bottom: 10%;
     text-align: center;
-    background: #855050;
+    background: #A6EDBA;
 
     color: #ffffff;
     text-decoration: none;
@@ -85,21 +85,37 @@
 }
 
 .page-landing .content-wrapper .content-buttons .button:hover {
-    background: #553333;
+    background: #70ca8a;
 }
 
 @media(max-width: 850px){
+    .page-landing {
+        height: 100vh;
+    }
+
     .content-wrapper {
-        display: block; 
+        height: 100vh; 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .content-wrapper .logo {
+        height: 15vh; 
+    }
+    
+    .text{
+        display: none;
     }
 
     .page-landing .content-wrapper main {
         width: 90%;
+        height: 50vh;        
         margin: 0 auto;
     }
     .page-landing .content-wrapper main p{
         width: 80%;
-        font-size: 18px;
+        font-size: 14px;
         text-align: center;
         margin-top: 10%;
     }
@@ -111,17 +127,18 @@
         text-align: center;
     }
 
-    .content-buttons {
-        margin-top: -150px;
-        background: #EEA7A7
+   
+    .page-landing .content-wrapper .content-buttons{
+        width: 100%;
+        height: 20vh;        
+        background: #EEA7A7;
     }
-
     .page-landing .content-wrapper .content-buttons .button {
         width: 150px;
-        height: 40px;
+        height: 60px;
 
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin-top: 4%;
+        margin-bottom: 1%;
 
         font-size: 15px;
         font-weight: 600;

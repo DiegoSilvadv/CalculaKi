@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import '../styles/milling.css';
-import Logo from '../images/calculaki.svg';
+import Header from '../components/header';
 
 import { FiArrowLeft } from 'react-icons/fi';
 
@@ -30,16 +30,14 @@ function Milling(){
 
     return(
         <div className="container">
+            <Header />
+
             <div className="content">
-                <Link to="/">
-                    <FiArrowLeft size={23} color="#ffffff" />
-                </Link>
-                
-                <strong>Fresadora</strong>
-                <p>Para achar o rpm ideal basta apenas colocar o valor do diametro da ferramenta <small>(em mm)</small> representado pela letra 'D' e a velocidade de corte representado pelas letras 'VC'. </p>
-                
                     <fieldset>
                         <legend>Fresadora</legend>
+
+                        <p>Para achar o rpm ideal basta apenas colocar o valor do diametro da ferramenta <small>(em mm)</small> representado pela letra 'D' e a velocidade de corte representado pelas letras 'VC'. </p>
+
                         <div className="input-block">
                             <label htmlFor="diameter">Diametro da ferramenta(D)</label>
                             <input 
@@ -64,18 +62,22 @@ function Milling(){
                                 disabled
                                 />
                         </div>
-
-                        <button className="button-sum" onClick={handleResult} >
-                            Calcular
-                        </button>
-                        <button onClick={handleClear}>
-                            Limpar
-                        </button>
+                        <div className="buttons">
+                            <button className="button-sum" onClick={handleResult} >
+                                Calcular
+                            </button>
+                            <button onClick={handleClear}>
+                                Limpar
+                            </button>
+                        </div>
+                        
                     </fieldset>
-                    
-                    <img src={Logo} alt="Logo"></img>
+                    <div className="return">
+                        <Link to="/">
+                            <FiArrowLeft size={23} color="#ffffff" />
+                        </Link>
+                    </div>
             </div>
-
         </div>
     );
 }

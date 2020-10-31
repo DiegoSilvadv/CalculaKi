@@ -2,10 +2,10 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import Logo from '../images/logo.svg';
 import { FiArrowRight } from 'react-icons/fi';
-import '../styles/landing.css';
+import '../styles/home.css';
 
 
-function Landing(){
+function Home(){
     return (
        <div className="page-landing">
            <div className="content-wrapper">
@@ -14,9 +14,9 @@ function Landing(){
                 </div>
 
                 <main>
-                    <h1>Bem vindo ao CalculaKi!</h1>
-                    <p>Com o CalculaKi você pode fazer calculos de rotação de torno mecânico e fresadoura, de uma forma rápida e simplificada. </p>
-                    <Link to="/feedback" >Deixar feedback</Link>
+                    <h1 className="text">Bem vindo ao CalculaKi!</h1>
+                    <p className="tex">Com o CalculaKi você pode fazer calculos de rotação de torno mecânico e fresadoura, de uma forma rápida e simplificada. </p>
+                    <p>Selecione uma opção para começar a calcular.</p>
                 </main>
 
                 <div className="content-buttons">
@@ -32,4 +32,4 @@ function Landing(){
     );
 }
 
-export default Landing;
+export default Home;
