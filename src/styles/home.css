@@ -1,6 +1,6 @@
 .page-landing {
     background: #f2f2f2;
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
 }
 
@@ -9,7 +9,7 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);   
 }
 .content-wrapper .logo {
     /* background: #6e6919; */
@@ -33,6 +33,26 @@
     font-size: 18px;
     padding: 15px;
     margin-top: 10%;
+}
+.page-landing .content-wrapper  main .links {
+    width: 65%;
+    margin: 20px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    flex-wrap: wrap;   
+}
+
+.page-landing .content-wrapper  main .links a {
+
+    font-size: 14px;
+    color: #382525;
+}
+
+.page-landing .content-wrapper  main .links a:hover {
+    color: #A6EDBA;
 }
 
 .page-landing .content-wrapper  main {
@@ -88,6 +108,7 @@
     background: #70ca8a;
 }
 
+
 @media(max-width: 850px){
     .page-landing {
         height: 100vh;
@@ -110,7 +131,7 @@
 
     .page-landing .content-wrapper main {
         width: 90%;
-        height: 50vh;        
+        height: 40vh;        
         margin: 0 auto;
     }
     .page-landing .content-wrapper main p{
@@ -129,13 +150,12 @@
 
    
     .page-landing .content-wrapper .content-buttons{
-        width: 100%;
-        height: 20vh;        
+        width: 100%;      
         background: #EEA7A7;
     }
     .page-landing .content-wrapper .content-buttons .button {
         width: 150px;
-        height: 60px;
+        height: 40px;
 
         margin-top: 4%;
         margin-bottom: 1%;
@@ -143,10 +163,24 @@
         font-size: 15px;
         font-weight: 600;
     }
+    
+}
 
- 
-    
-    
+@media only screen and (max-width: 420px){
+    .page-landing .content-wrapper  main .links {
+        width: 100%;
+    }
+
+    /* .page-landing .content-wrapper  main .links a {
+        font-size: 10px;
+    } */
+
+    .page-landing .content-wrapper .content-buttons p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+   
 }
 
 

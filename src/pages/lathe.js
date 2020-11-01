@@ -34,12 +34,12 @@ function Milling(){
 
             <div className="content">
                     <fieldset>
-                        <legend>Fresamento</legend>
+                        <legend>Torneamento</legend>
 
-                        <p>Para achar o rpm ideal basta apenas colocar o valor do diametro da ferramenta <small>(em mm)</small> representado pela letra 'D' e a velocidade de corte representado pelas letras 'VC'. </p>
+                        <p>Para achar o rpm ideal basta apenas colocar o valor do diâmetro da peça à usinar <small>(em mm)</small> representado pelas letras 'Dm' e a velocidade de corte representado pelas letras 'VC'. </p>
 
                         <div className="input-block">
-                            <label htmlFor="diameter">Diametro da ferramenta(D)</label>
+                            <label htmlFor="diameter">Diametro da Peça(Dm)</label>
                             <input 
                                 id="diameter" 
                                 value={diameter} 
