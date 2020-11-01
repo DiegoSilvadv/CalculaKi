@@ -13,7 +13,7 @@ function Milling(){
     
     //função de click do botão
     function handleResult(){
-        if(diameter != 0 && vc != 0 ){
+        if(diameter !== 0 && vc !== 0 ){
             setResult(Math.round((vc*1000)/(diameter*3.14)))
         }
         else {

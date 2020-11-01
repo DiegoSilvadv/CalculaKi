@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import Logo from '../images/logo.svg';
 import { FiArrowRight } from 'react-icons/fi';
 import '../styles/home.css';
-import ola from '../images/image.svg';
+
 
 
 function Home(){
