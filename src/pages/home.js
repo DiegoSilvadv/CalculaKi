@@ -34,7 +34,7 @@ function Home(){
                         <FiArrowRight size={25} color="#ffffff" className="icon" />Torno Mecânico
                     </Link>
                     <Link to="/milling" className="button"  >
-                        <FiArrowRight size={25} color="#ffffff" className="icon-2"/>Fresadora
+                        <FiArrowRight size={25} color="#ffffff" className="icon-2"/>Fresadoura
                     </Link>
 
                     <p>Desenvolvido por Diego Silva-
