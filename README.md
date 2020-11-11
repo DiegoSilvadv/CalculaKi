@@ -10,7 +10,7 @@
 ### Features
 
 - [x] Calculo de RPM de torno
-- [ ] Calculo de RPM de fresa
+- [x] Calculo de RPM de fresa
 
 ### Pré-requisitos
 
