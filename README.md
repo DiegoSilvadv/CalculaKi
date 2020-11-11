@@ -1,5 +1,5 @@
 # CalculaKi
-## Software desenvolvido para facilitar a vida de estudantes de usinagem facilitando calculos de RPM de torno mecanico e de fresadoura.
+## Software desenvolvido para facilitar a vida de estudantes de usinagem, fazendo calculos de RPM de torno mecânico e de fresadoura.
 
 <img src="https://img.shields.io/static/v1?label=yarn&message=1.22.5&color=f294c1&style=flat"/>
 
